@@ -10,5 +10,5 @@ A "Powerful" Converter, that can convert binary to text and text to binary(with 
 |sudo pacman -S gcc
 ########################################
 |Convert Linux
-|g++ -O3 -static UBC-linux.cpp -o ubc_converter
+|g++ UBC-linux.cpp -o UBC-linux `pkg-config --cflags --libs gtk+-3.0` -static-libgcc -static-libstdc++
 |'-static' is optio(a)nal
